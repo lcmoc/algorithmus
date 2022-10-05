@@ -1,76 +1,65 @@
-import Model.Person;
-import NumberSorts.BubbleSort;
-import NumberSorts.SelectionSort;
+import Data.Comparable.ComparableDataAge;
+import Data.Comparable.ComparableDataFirstName;
+import Data.Comperator.ComperatorDataAge;
+import Entities.Comparable.ComparableEntityAge;
+import Entities.Comparable.ComparableEntityFirstName;
+import Entities.Comperator.ComperatorEntityAge;
+import Sorts.Comparabel.ComparabelBubbleSortAge;
+import Sorts.Comparabel.ComparabelBubbleSortFirstName;
+import Sorts.Comperator.ComperatorBubbleSortAge;
+import Sorts.Standard.BubbleSort;
+import Sorts.Standard.SelectionSort;
 
+import java.util.Arrays;
 import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
-        // Wörter sortieren
-
-        String word = "abendessen";
-        char[] chars = word.toCharArray();
-
-        System.out.println(chars);
-        int last = chars.length-1;
-
-        for(int i =0; i<chars.length / 2; i++) {
-           char temp = chars[i];
-
-           chars[i] = chars[last -i];
-           chars[last-i] = temp;
-        }
-
         // Bubble Sort
         int bubbleNumbers[] = {5, 3, 7, 8, 10};
-
-        System.out.println("Array Before Bubble Sort");
-        for(int i=0; i < bubbleNumbers.length; i++){
-            System.out.print(bubbleNumbers[i] + " ");
-        }
+        System.out.println("before Bubble Sort");
+        System.out.println(Arrays.toString(bubbleNumbers));
         System.out.println();
 
         new BubbleSort(bubbleNumbers);
 
-        System.out.println("Array After Bubble Sort");
-        for(int i=0; i < bubbleNumbers.length; i++){
-            System.out.print(bubbleNumbers[i] + " ");
-        }
-
+        System.out.println("after Bubble Sort");
+        System.out.println(Arrays.toString(bubbleNumbers));
         System.out.println();
 
-        //selection sort
+        //Selection Sort
         int selectionNumbers[] = {5, 3, 7, 8, 10};
 
-        System.out.println("Array Before Selectioon Sort");
-        for(int i=0; i < selectionNumbers.length; i++){
-            System.out.print(selectionNumbers[i] + " ");
-        }
+        // create stream of selectionNumbers
+        System.out.println("before Selection Sort");
+        System.out.println(Arrays.toString(selectionNumbers));
         System.out.println();
 
         new SelectionSort(selectionNumbers);
 
-        System.out.println("Array After Selection Sort");
-        for(int i=0; i < selectionNumbers.length; i++){
-            System.out.print(selectionNumbers[i] + " ");
-        }
+        System.out.println("after Selection Sort");
+        System.out.println(Arrays.toString(selectionNumbers));
+        System.out.println();
 
-        // Person Sort
+        //Comparable
+        // Person Sort by age
+        ComparableEntityAge[] comparableEntityAges = new ComparableDataAge().creatPersons();
+        new ComparabelBubbleSortAge(comparableEntityAges);
 
-        PersonData personDaata = new PersonData();
-        Person[] persons = personDaata.creatPersons();
+        Stream.of(comparableEntityAges).limit(8).forEach(p -> System.out.println(p.toString()));
+        System.out.println();
 
-        for(int i =0; i<persons.length -1; i++) {
-            for(int index=1; index<persons.length -1; index++) {
-                if(persons[index].compareTo(persons[index + 1]) > 0) {
+        // Person Sort by first name
+        ComparableEntityFirstName[] comparableEntityFirstNames = new ComparableDataFirstName().creatPersons();
+        new ComparabelBubbleSortFirstName(comparableEntityFirstNames);
 
-                    Person swap = persons[index + 1];
-                    persons[index + 1] = persons[index];
-                    persons[index] = swap;
-                }
-            }
-        }
+        Stream.of(comparableEntityFirstNames).limit(8).forEach(p -> System.out.println(p.toString()));
+        System.out.println();
 
-        Stream.of(persons).forEach(p -> System.out.println(p.getAge()));
+        //Comperator
+        ComperatorEntityAge[] comperatorEntityAge = new ComperatorDataAge().creatPersons();
+        new ComperatorBubbleSortAge(comperatorEntityAge);
+
+        Stream.of(comperatorEntityAge).limit(8).forEach(p -> System.out.println(p.toString()));
     }
 }

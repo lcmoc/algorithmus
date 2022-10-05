@@ -1,0 +1,114 @@
+package Data.Comperator;
+
+import Entities.Comperator.ComperatorEntityAge;
+
+
+public class ComperatorDataAge {
+
+    public ComperatorEntityAge[] creatPersons() {
+        ComperatorEntityAge[] comperatorEntityAges = new ComperatorEntityAge[100];
+        comperatorEntityAges[0] = new ComperatorEntityAge("Zenia",  "Estes", 1.82, 37, 37);
+        comperatorEntityAges[1] = new ComperatorEntityAge("Tatyana",  "Ramirez", 1.65, 37, 40);
+        comperatorEntityAges[2] = new ComperatorEntityAge("Abbot",  "Burris", 1.82, 38, 38);
+        comperatorEntityAges[3] = new ComperatorEntityAge("Keaton",  "Riddle", 1.53, 43, 29);
+        comperatorEntityAges[4] = new ComperatorEntityAge("Dorian",  "Rasmussen", 1.57, 38, 28);
+        comperatorEntityAges[5] = new ComperatorEntityAge("Kylee",  "Boyd", 1.66, 41, 27);
+        comperatorEntityAges[6] = new ComperatorEntityAge("Ferdinand",  "Hernandez", 1.82, 44, 30);
+        comperatorEntityAges[7] = new ComperatorEntityAge("Jorden",  "Gamble", 1.68, 37, 23);
+        comperatorEntityAges[8] = new ComperatorEntityAge("Evelyn",  "Pugh", 1.55, 41, 20);
+        comperatorEntityAges[9] = new ComperatorEntityAge("Tamara",  "Bradshaw", 1.63, 42, 30);
+        comperatorEntityAges[10] = new ComperatorEntityAge("Ezekiel",  "Morrow", 1.55, 41, 25);
+        comperatorEntityAges[11] = new ComperatorEntityAge("Sara",  "Warner", 1.8, 40, 36);
+        comperatorEntityAges[12] = new ComperatorEntityAge("Driscoll",  "Burch", 1.74, 35, 23);
+        comperatorEntityAges[13] = new ComperatorEntityAge("Charissa",  "Fulton", 1.91, 42, 28);
+        comperatorEntityAges[14] = new ComperatorEntityAge("Hilel",  "Tyson", 1.52, 41, 23);
+        comperatorEntityAges[15] = new ComperatorEntityAge("Warren",  "Holmes", 1.86, 42, 21);
+        comperatorEntityAges[16] = new ComperatorEntityAge("Aladdin",  "Meyer", 1.76, 42, 34);
+        comperatorEntityAges[17] = new ComperatorEntityAge("Geoffrey",  "Lindsay", 1.67, 39, 39);
+        comperatorEntityAges[18] = new ComperatorEntityAge("Bevis",  "Wilcox", 1.59, 43, 29);
+        comperatorEntityAges[19] = new ComperatorEntityAge("Kylee",  "Barber", 1.61, 44, 39);
+        comperatorEntityAges[20] = new ComperatorEntityAge("Gretchen",  "Mcintyre", 1.68, 44, 31);
+        comperatorEntityAges[21] = new ComperatorEntityAge("Lucius",  "Bauer", 1.83, 42, 28);
+        comperatorEntityAges[22] = new ComperatorEntityAge("Lillian",  "Welch", 1.76, 44, 29);
+        comperatorEntityAges[23] = new ComperatorEntityAge("Steel",  "Hoffman", 1.66, 39, 35);
+        comperatorEntityAges[24] = new ComperatorEntityAge("Brenden",  "Wong", 1.7, 40, 23);
+        comperatorEntityAges[25] = new ComperatorEntityAge("Michael",  "Boyd", 1.53, 38, 25);
+        comperatorEntityAges[26] = new ComperatorEntityAge("Aurelia",  "Holt", 1.92, 35, 23);
+        comperatorEntityAges[27] = new ComperatorEntityAge("Mercedes",  "Arnold", 1.66, 44, 32);
+        comperatorEntityAges[28] = new ComperatorEntityAge("Patience",  "Vaughan", 1.54, 44, 38);
+        comperatorEntityAges[29] = new ComperatorEntityAge("Lionel",  "Day", 1.5, 41, 24);
+        comperatorEntityAges[30] = new ComperatorEntityAge("Orlando",  "Compton", 1.85, 37, 33);
+        comperatorEntityAges[31] = new ComperatorEntityAge("Cora",  "Holmes", 1.74, 41, 32);
+        comperatorEntityAges[32] = new ComperatorEntityAge("Lydia",  "Mccormick", 1.73, 38, 33);
+        comperatorEntityAges[33] = new ComperatorEntityAge("Lysandra",  "Rollins", 1.61, 44, 24);
+        comperatorEntityAges[34] = new ComperatorEntityAge("Brenda",  "Mercer", 1.6, 44, 39);
+        comperatorEntityAges[35] = new ComperatorEntityAge("Roary",  "Ruiz", 1.88, 38, 28);
+        comperatorEntityAges[36] = new ComperatorEntityAge("Kyra",  "Roy", 1.86, 42, 39);
+        comperatorEntityAges[37] = new ComperatorEntityAge("Maggy",  "Ray", 1.76, 40, 28);
+        comperatorEntityAges[38] = new ComperatorEntityAge("Darrel",  "Browning", 1.79, 38, 32);
+        comperatorEntityAges[39] = new ComperatorEntityAge("Hanae",  "Brock", 1.59, 44, 24);
+        comperatorEntityAges[40] = new ComperatorEntityAge("Kaye",  "Day", 1.54, 42, 30);
+        comperatorEntityAges[41] = new ComperatorEntityAge("Lev",  "Parks", 1.52, 37, 31);
+        comperatorEntityAges[42] = new ComperatorEntityAge("Brenden",  "Fields", 1.74, 38, 18);
+        comperatorEntityAges[43] = new ComperatorEntityAge("Noel",  "Sharp", 1.9, 35, 21);
+        comperatorEntityAges[44] = new ComperatorEntityAge("Hamilton",  "Poole", 1.61, 42, 29);
+        comperatorEntityAges[45] = new ComperatorEntityAge("Jonah",  "Roach", 1.71, 37, 38);
+        comperatorEntityAges[46] = new ComperatorEntityAge("Joel",  "Rasmussen", 1.57, 42, 27);
+        comperatorEntityAges[47] = new ComperatorEntityAge("Rudyard",  "Bass", 1.59, 44, 35);
+        comperatorEntityAges[48] = new ComperatorEntityAge("Simone",  "Adkins", 1.58, 42, 37);
+        comperatorEntityAges[49] = new ComperatorEntityAge("Quintessa",  "Ball", 1.79, 40, 27);
+        comperatorEntityAges[50] = new ComperatorEntityAge("Caleb",  "Barton", 1.84, 43, 23);
+        comperatorEntityAges[51] = new ComperatorEntityAge("Cassady",  "Britt", 1.65, 41, 18);
+        comperatorEntityAges[52] = new ComperatorEntityAge("Chancellor",  "Roberts", 1.84, 38, 24);
+        comperatorEntityAges[53] = new ComperatorEntityAge("Moses",  "Kent", 1.66, 41, 29);
+        comperatorEntityAges[54] = new ComperatorEntityAge("Ivy",  "Mathis", 1.87, 44, 26);
+        comperatorEntityAges[55] = new ComperatorEntityAge("Yuri",  "Boyd", 1.67, 42, 27);
+        comperatorEntityAges[56] = new ComperatorEntityAge("Oliver",  "Hancock", 1.91, 36, 37);
+        comperatorEntityAges[57] = new ComperatorEntityAge("Rogan",  "Travis", 1.94, 43, 21);
+        comperatorEntityAges[58] = new ComperatorEntityAge("Teagan",  "Christensen", 1.92, 36, 34);
+        comperatorEntityAges[59] = new ComperatorEntityAge("Drew",  "Mccray", 1.57, 37, 37);
+        comperatorEntityAges[60] = new ComperatorEntityAge("Lillith",  "Perry", 1.85, 35, 19);
+        comperatorEntityAges[61] = new ComperatorEntityAge("Paki",  "Beasley", 1.55, 40, 36);
+        comperatorEntityAges[62] = new ComperatorEntityAge("Ignatius",  "Hancock", 1.83, 36, 36);
+        comperatorEntityAges[63] = new ComperatorEntityAge("Regina",  "Faulkner", 1.64, 38, 28);
+        comperatorEntityAges[64] = new ComperatorEntityAge("Garrison",  "Murphy", 1.59, 36, 31);
+        comperatorEntityAges[65] = new ComperatorEntityAge("Clark",  "Hopkins", 1.67, 40, 40);
+        comperatorEntityAges[66] = new ComperatorEntityAge("Warren",  "Wise", 1.81, 44, 32);
+        comperatorEntityAges[67] = new ComperatorEntityAge("Maggy",  "Collins", 1.87, 38, 36);
+        comperatorEntityAges[68] = new ComperatorEntityAge("Amela",  "Solomon", 1.71, 42, 36);
+        comperatorEntityAges[69] = new ComperatorEntityAge("Maryam",  "Perry", 1.67, 36, 34);
+        comperatorEntityAges[70] = new ComperatorEntityAge("Deacon",  "Perry", 1.84, 43, 20);
+        comperatorEntityAges[71] = new ComperatorEntityAge("TaShya",  "Sutton", 1.51, 44, 25);
+        comperatorEntityAges[72] = new ComperatorEntityAge("Stacey",  "Glover", 1.56, 42, 20);
+        comperatorEntityAges[73] = new ComperatorEntityAge("Shay",  "Wheeler", 1.76, 39, 24);
+        comperatorEntityAges[74] = new ComperatorEntityAge("Carla",  "Velazquez", 1.61, 42, 30);
+        comperatorEntityAges[75] = new ComperatorEntityAge("Chase",  "Boyd", 1.73, 38, 21);
+        comperatorEntityAges[76] = new ComperatorEntityAge("Keegan",  "Shannon", 1.86, 43, 19);
+        comperatorEntityAges[77] = new ComperatorEntityAge("Ciaran",  "Farmer", 1.94, 36, 31);
+        comperatorEntityAges[78] = new ComperatorEntityAge("Tyrone",  "Moreno", 1.84, 42, 33);
+        comperatorEntityAges[79] = new ComperatorEntityAge("Sierra",  "Burt", 1.8, 44, 18);
+        comperatorEntityAges[80] = new ComperatorEntityAge("Judah",  "Barnes", 1.77, 39, 35);
+        comperatorEntityAges[81] = new ComperatorEntityAge("Maxwell",  "Strong", 1.61, 37, 22);
+        comperatorEntityAges[82] = new ComperatorEntityAge("Tashya",  "Garner", 1.83, 40, 31);
+        comperatorEntityAges[83] = new ComperatorEntityAge("Jaquelyn",  "Osborne", 1.74, 42, 18);
+        comperatorEntityAges[84] = new ComperatorEntityAge("Leandra",  "Wilkins", 1.79, 37, 31);
+        comperatorEntityAges[85] = new ComperatorEntityAge("Colt",  "Hoffman", 1.94, 41, 33);
+        comperatorEntityAges[86] = new ComperatorEntityAge("Calvin",  "Ingram", 1.66, 36, 25);
+        comperatorEntityAges[87] = new ComperatorEntityAge("Pamela",  "Atkinson", 1.67, 44, 38);
+        comperatorEntityAges[88] = new ComperatorEntityAge("Nadine",  "Russo", 1.74, 42, 37);
+        comperatorEntityAges[89] = new ComperatorEntityAge("Flavia",  "Logan", 1.83, 41, 31);
+        comperatorEntityAges[90] = new ComperatorEntityAge("Duncan",  "Tate", 1.72, 40, 39);
+        comperatorEntityAges[91] = new ComperatorEntityAge("Yasir",  "Cobb", 1.74, 43, 25);
+        comperatorEntityAges[92] = new ComperatorEntityAge("Elijah",  "Anderson", 1.76, 40, 33);
+        comperatorEntityAges[93] = new ComperatorEntityAge("Gail",  "Wong", 1.53, 44, 19);
+        comperatorEntityAges[94] = new ComperatorEntityAge("Macy",  "Moss", 1.5, 39, 34);
+        comperatorEntityAges[95] = new ComperatorEntityAge("Callum",  "Day", 1.82, 44, 21);
+        comperatorEntityAges[96] = new ComperatorEntityAge("Kylan",  "Walls", 1.64, 39, 26);
+        comperatorEntityAges[97] = new ComperatorEntityAge("Cynthia",  "Black", 1.72, 42, 37);
+        comperatorEntityAges[98] = new ComperatorEntityAge("Natalie",  "Hancock", 1.54, 42, 34);
+        comperatorEntityAges[99] = new ComperatorEntityAge("Walker",  "Justice", 1.66, 39, 27);
+
+        return comperatorEntityAges;
+    }
+
+}
