@@ -1,12 +1,15 @@
 import Data.Comparable.ComparableDataAge;
 import Data.Comparable.ComparableDataFirstName;
 import Data.Comperator.ComperatorDataAge;
+import Data.Comperator.ComperatorDataFirstName;
 import Entities.Comparable.ComparableEntityAge;
 import Entities.Comparable.ComparableEntityFirstName;
 import Entities.Comperator.ComperatorEntityAge;
+import Entities.Comperator.ComperatorEntityFirstName;
 import Sorts.Comparabel.ComparabelBubbleSortAge;
 import Sorts.Comparabel.ComparabelBubbleSortFirstName;
 import Sorts.Comperator.ComperatorBubbleSortAge;
+import Sorts.Comperator.ComperatorBubbleSortFirstName;
 import Sorts.Standard.BubbleSort;
 import Sorts.Standard.SelectionSort;
 
@@ -46,6 +49,7 @@ public class Main {
         ComparableEntityAge[] comparableEntityAges = new ComparableDataAge().creatPersons();
         new ComparabelBubbleSortAge(comparableEntityAges);
 
+        System.out.println("Comparable sort by age");
         Stream.of(comparableEntityAges).limit(8).forEach(p -> System.out.println(p.toString()));
         System.out.println();
 
@@ -53,13 +57,25 @@ public class Main {
         ComparableEntityFirstName[] comparableEntityFirstNames = new ComparableDataFirstName().creatPersons();
         new ComparabelBubbleSortFirstName(comparableEntityFirstNames);
 
+        System.out.println("Comparable sort by first name");
         Stream.of(comparableEntityFirstNames).limit(8).forEach(p -> System.out.println(p.toString()));
         System.out.println();
 
         //Comperator
+        // Person Sort by age
         ComperatorEntityAge[] comperatorEntityAge = new ComperatorDataAge().creatPersons();
         new ComperatorBubbleSortAge(comperatorEntityAge);
 
+        System.out.println("Comperator sort by age");
         Stream.of(comperatorEntityAge).limit(8).forEach(p -> System.out.println(p.toString()));
+        System.out.println();
+
+        // Person Sort by first name
+        ComperatorEntityFirstName[] comperatorEntityFirstName = new ComperatorDataFirstName().creatPersons();
+        new ComperatorBubbleSortFirstName(comperatorEntityFirstName);
+
+        System.out.println("Comperator sort by first name");
+        Stream.of(comperatorEntityFirstName).limit(8).forEach(p -> System.out.println(p.toString()));
+
     }
 }

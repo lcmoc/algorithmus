@@ -48,7 +48,7 @@ public class ComparableEntityAge implements Comparable<ComparableEntityAge> {
 
     @Override
     public String toString() {
-        return "Person2{" +
+        return "Person {" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", height=" + height +
@@ -59,7 +59,7 @@ public class ComparableEntityAge implements Comparable<ComparableEntityAge> {
 
     @Override
     public int compareTo(ComparableEntityAge o) {
-        if (age > o.age) return 1;
+        if (this.age > o.age) return 1;
         if (age < o.age) return -1;
         return 0;
     }

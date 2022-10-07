@@ -1,13 +1,16 @@
-package Entities.Comparable;
+package Entities.Comperator;
 
-public class ComparableEntityFirstName implements Comparable<ComparableEntityFirstName> {
+import java.util.Comparator;
+
+public class ComperatorEntityFirstName implements Comparator<ComperatorEntityFirstName> {
+
     private String firstName;
     private String lastName;
     private double height;
     private int shoeSize;
     private int age;
 
-    public ComparableEntityFirstName(String firstName, String lastName, double height, int shoeSize, int age) {
+    public ComperatorEntityFirstName(String firstName, String lastName, double height, int shoeSize, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.height = height;
@@ -48,7 +51,7 @@ public class ComparableEntityFirstName implements Comparable<ComparableEntityFir
 
     @Override
     public String toString() {
-        return "Person2{" +
+        return "Person{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", height=" + height +
@@ -58,10 +61,11 @@ public class ComparableEntityFirstName implements Comparable<ComparableEntityFir
     }
 
     @Override
-    public int compareTo(ComparableEntityFirstName o) {
-        int result = this.firstName.compareTo(o.firstName);
+    public int compare(ComperatorEntityFirstName o1, ComperatorEntityFirstName o2) {
+        int result = o1.getFirstName().compareTo(o2.getFirstName());
         if(result == 0 ){
-            return this.firstName.compareTo(o.firstName);
+
+            return o1.getFirstName().compareTo(o2.getFirstName());
         }
         return result;
     }
